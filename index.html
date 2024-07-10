@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .btn1 {
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            background-color: #C40C11;
+            color: white;
+            border: none;
+        }
+        
+        
+        .btn1:hover {
+            border: 2px solid #C40C11 !important;
+            color: #C40C11;
+            background-color: white;
+            justify-content: space-around;
+            box-shadow: 0px 5px 7px #c40c1264;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./heading.jpg">
+    
+    <section class="bannerContainer" style="display: none;">
+        <button  class="upholsteryBtn btn1"> Changes Depending on Date Specs to display corresponding banner 
+        </button>
+        <img class="pcBanner" src="" />
+    </section>
+
+    <section class="homepage-banner container-fluid container--xxl">
+        <button class="btn1" >this will have normal info and image usually shown </button >
+        <img src="./usualImages.jpg" />
+    </section>
+
+    <img src="./xtra.jpg" alt="" srcset="">
+
+</body>
+<script src="./script.js"></script>
+
+</html>
