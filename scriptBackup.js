@@ -67,10 +67,10 @@ const imgSwapper = (holiday) => {
     }
     //  if(holiday.pcImg){document.querySelector(".pcBanner").src = holiday.mbImg}
     if (holiday.btnMesg) {
-      document.querySelector(".upholsteryBtn").innerText = holiday.btnMesg;
+      document.querySelector(".card-homepage__button.btn.btn-primary.btn1").innerText = holiday.btnMesg;
     }
     if (holiday.btnLink) {
-      document.querySelector(".upholsteryBtn").href = holiday.btnLink;
+      document.querySelector(".card-homepage__button.btn.btn-primary.btn1").href = holiday.btnLink;
     }
   }
 };

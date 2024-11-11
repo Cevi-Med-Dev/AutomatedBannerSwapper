@@ -28,7 +28,7 @@ const Holidays = {
   thanksgiving: {
     title: "thanksgiving",
     month: 10,
-    start: 28,
+    start: 10,
     end: 30,
     mbImg: "https://files.cevimedone.com/cevimed/images/holidays",
     pcImg: "./tnxGvn.jpg",
@@ -46,12 +46,8 @@ const imgSwapper = (holiday) => {
       document.querySelector(".card-homepage__asset.section-bg img").src =
         holiday.pcImg;
     }
-    //  if(holiday.pcImg){document.querySelector(".pcBanner").src = holiday.mbImg}
     if (holiday.btnMesg) {
-      document.querySelector(".upholsteryBtn").innerText = holiday.btnMesg;
-    }
-    if (holiday.btnLink) {
-      document.querySelector(".upholsteryBtn").href = holiday.btnLink;
+      document.querySelector(".card-homepage__button.btn.btn-primary.btn1").innerText = holiday.btnMesg;
     }
   }
 };
