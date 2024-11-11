@@ -35,7 +35,26 @@ const Holidays = {
     btnMesg: "Thank You for Choosing Us!",
     btnLink: "",
   },
-
+  december: {
+    title: "december",
+    month: 11,
+    start: 1,
+    end: 23,
+    mbImg: "https://files.cevimedone.com/cevimed/images/holidays",
+    pcImg: "./december.jpg",
+    btnMesg: "Happy Holiday Season ",
+    btnLink: "",
+  },
+  christmas: {
+    title: "christmas",
+    month: 11,
+    start: 23,
+    end: 31,
+    mbImg: "https://files.cevimedone.com/cevimed/images/holidays",
+    pcImg: "./christmas.jpg",
+    btnMesg: "Marry Christmas Happy New Years",
+    btnLink: "",
+  },
 };
 
 //function that handles logic
