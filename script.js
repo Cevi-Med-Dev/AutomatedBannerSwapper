@@ -5,6 +5,15 @@ let Month = d.getMonth();
 //Configurable object for images chosen 
 const HolidayObject = {
   independence: {
+    month: 0,
+    start: 15,
+    end: 15,
+    mbImg: "",
+    pcImg: "",
+    btnMesg: "",
+    btnLink: ""
+  },
+  independence: {
     month: 6,
     start: 3,
     end: 8,
