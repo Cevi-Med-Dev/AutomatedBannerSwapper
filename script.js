@@ -28,32 +28,36 @@ const Holidays = {
   thanksgiving: {
     title: "thanksgiving",
     month: 10,
-    start: 10,
-    end: 30,
-    mbImg: "https://files.cevimedone.com/cevimed/images/holidays",
-    pcImg: "./tnxGvn.jpg",
+    start: 26,
+    end: 29,
+    mbImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn-mb.jpg",
+    pcImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn.jpg",
     btnMesg: "Thank You for Choosing Us!",
     btnLink: "",
   },
-
 };
 
 //function that handles logic
 const imgSwapper = (holiday) => {
-  console.log(holiday);
-  {
-    if (holiday.pcImg) {
-      document.querySelector(".card-homepage__asset.section-bg img").src =
-        holiday.pcImg;
+  console.log(Holidays[`${holiday}`].pcImg);
+  if (window.innerWidth > 700) {
+    document.querySelector(".card-homepage__asset.section-bg img").src = Holidays[`${holiday}`].pcImg;
+  } else {
+    if (Holidays[`${holiday}`].mbImg) {
+      console.log(Holidays[`${holiday}`].mbImg);
+      document.querySelector(".card-homepage__asset.section-bg img").src = Holidays[`${holiday}`].mbImg;
     }
-    if (holiday.btnMesg) {
-      document.querySelector(".card-homepage__button.btn.btn-primary.btn1").innerText = holiday.btnMesg;
-    }
+  }
+  if (Holidays[`${holiday}`].btnMesg) {
+    console.log(Holidays[`${holiday}`].mbImg);
+    document.querySelector(
+      ".card-homepage__button.btn.btn-primary.btn1"
+    ).innerText = Holidays[`${holiday}`].btnMesg;
   }
 };
 
-let currentHoliday = Object.values(Holidays).find(
-  (holiday) => holiday.month === Month && holiday.start === Today
-);
-
-  imgSwapper(currentHoliday);
+Object.values(Holidays).forEach((holiday) => {
+  if (holiday.month === Month && holiday.end > Today && holiday.start <= Today) {
+    imgSwapper(holiday.title);
+  }
+});

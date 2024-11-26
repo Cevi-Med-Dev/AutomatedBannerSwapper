@@ -28,10 +28,10 @@ const Holidays = {
   thanksgiving: {
     title: "thanksgiving",
     month: 10,
-    start: 28,
+    start: 25,
     end: 30,
-    mbImg: "https://files.cevimedone.com/cevimed/images/holidays",
-    pcImg: "./tnxGvn.jpg",
+    mbImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn-mb.jpg",
+    pcImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn.jpg",
     btnMesg: "Thank You for Choosing Us!",
     btnLink: "",
   },
