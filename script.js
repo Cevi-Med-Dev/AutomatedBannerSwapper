@@ -32,7 +32,6 @@ const Holidays = {
     end: 29,
     mbImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn-mb.jpg",
     pcImg: "https://files.cevimedone.com/cevimed/images/holidays/tnxGvn.jpg",
-    btnMesg: "Thank You for Choosing Us!",
     btnLink: "",
   },
 };
@@ -53,6 +52,8 @@ const imgSwapper = (holiday) => {
     document.querySelector(
       ".card-homepage__button.btn.btn-primary.btn1"
     ).innerText = Holidays[`${holiday}`].btnMesg;
+  }else{
+    document.querySelector(".card-homepage__button.btn.btn-primary.btn1").style.display = "none";
   }
 };
 
